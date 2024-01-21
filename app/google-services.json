@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1096309869024",
+    "project_id": "imageindexer-e74d0",
+    "storage_bucket": "imageindexer-e74d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1096309869024:android:d31cd17391b35df5e88385",
+        "android_client_info": {
+          "package_name": "tr.com.cemre.imageindexer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIIiRuN5e98b5FwJVp_RNv91OPqiQzThI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    tools:context=".activities.RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/login_shape_bk"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="88dp"
+            android:text="SIGN UP"
+            android:textColor="@color/purple"
+            android:textColorHighlight="@color/purple"
+            android:textColorHint="@color/purple"
+            android:textColorLink="@color/purple"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout5"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="60dp"
+            android:hint="Name"
+            android:textColorHint="@color/purple"
+            app:boxStrokeColor="@color/purple"
+            app:counterTextColor="@color/purple"
+            app:endIconTint="@color/purple"
+            app:helperTextTextColor="@color/purple"
+            app:hintTextColor="@color/purple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView9"
+            app:placeholderTextColor="@color/purple"
+            app:prefixTextColor="@color/purple"
+            app:startIconTint="@color/purple"
+            app:suffixTextColor="@color/purple">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etNameSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/purple"
+                android:textColorHighlight="@color/purple"
+                android:textColorHint="@color/purple"
+                android:textColorLink="@color/purple" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:hint="E-mail"
+            android:textColorHint="@color/purple"
+            app:boxStrokeColor="@color/purple"
+            app:counterTextColor="@color/purple"
+            app:endIconTint="@color/purple"
+            app:helperTextTextColor="@color/purple"
+            app:hintTextColor="@color/purple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
+            app:placeholderTextColor="@color/purple"
+            app:prefixTextColor="@color/purple"
+            app:startIconTint="@color/purple"
+            app:suffixTextColor="@color/purple">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmailSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/purple"
+                android:textColorHighlight="@color/purple"
+                android:textColorHint="@color/purple"
+                android:textColorLink="@color/purple"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout4"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:hint="Password"
+            android:textColorHint="@color/purple"
+            app:boxStrokeColor="@color/purple"
+            app:counterTextColor="@color/purple"
+            app:endIconTint="@color/purple"
+            app:helperTextTextColor="@color/purple"
+            app:hintTextColor="@color/purple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+            app:placeholderTextColor="@color/purple"
+            app:prefixTextColor="@color/purple"
+            app:startIconTint="@color/purple"
+            app:suffixTextColor="@color/purple">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:textColor="@color/purple"
+                android:textColorHighlight="@color/purple"
+                android:textColorHint="@color/purple"
+                android:textColorLink="@color/purple" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnSignup"
+            style="?attr/materialButtonOutlinedStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="156dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="157dp"
+            android:text="signup"
+            android:textColor="@color/purple"
+            android:textSize="16sp"
+            app:iconTint="@color/purple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
+            app:strokeColor="@color/purple" />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Log in!"
+            android:textColor="@color/purple"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSignup"
+            app:layout_constraintVertical_bias="0.691" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

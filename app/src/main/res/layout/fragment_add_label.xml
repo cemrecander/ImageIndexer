@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/egg_shell"
+    tools:context=".ui.AddLabelFragment" >
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Add Label"
+        android:textColor="@color/purple"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:hint="Label"
+        android:textColorHint="@color/purple"
+        app:boxStrokeColor="@color/purple"
+        app:counterTextColor="@color/purple"
+        app:endIconTint="@color/purple"
+        app:helperTextTextColor="@color/purple"
+        app:hintTextColor="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:placeholderTextColor="@color/purple"
+        app:prefixTextColor="@color/purple"
+        app:startIconTint="@color/purple"
+        app:suffixTextColor="@color/purple">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple"
+            android:textColorHighlight="@color/purple"
+            android:textColorHint="@color/purple"
+            android:textColorLink="@color/purple" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout7"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:hint="Description"
+        android:textColorHint="@color/purple"
+        app:boxStrokeColor="@color/purple"
+        app:counterTextColor="@color/purple"
+        app:endIconTint="@color/purple"
+        app:helperTextTextColor="@color/purple"
+        app:hintTextColor="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6"
+        app:placeholderTextColor="@color/purple"
+        app:prefixTextColor="@color/purple"
+        app:startIconTint="@color/purple"
+        app:suffixTextColor="@color/purple">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etDescr"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|left"
+            android:textColor="@color/purple"
+            android:textColorHighlight="@color/purple"
+            android:textColorHint="@color/purple"
+            android:textColorLink="@color/purple" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="160dp"
+        android:text="add"
+        android:textColor="@color/purple"
+        android:textSize="16sp"
+        app:iconTint="@color/purple"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7"
+        app:strokeColor="@color/purple" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="1dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.359">
+
+        <LinearLayout
+            android:id="@+id/layoutLabels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

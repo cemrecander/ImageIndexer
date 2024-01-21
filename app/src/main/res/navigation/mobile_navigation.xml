@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_add_label">
+
+    <fragment
+        android:id="@+id/nav_add_label"
+        android:name="tr.com.cemre.imageindexer.ui.AddLabelFragment"
+        android:label="Add Label"
+        tools:layout="@layout/fragment_add_label" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="tr.com.cemre.imageindexer.ui.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_add_photo"
+        android:name="tr.com.cemre.imageindexer.ui.AddPhotoFragment"
+        android:label="Add Photo"
+        tools:layout="@layout/fragment_add_photo" />
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="tr.com.cemre.imageindexer.ui.LogoutFragment"
+        android:label="fragment_logout"
+        tools:layout="@layout/fragment_logout" />
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="tr.com.cemre.imageindexer.ui.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

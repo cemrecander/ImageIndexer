@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/postImageView"
+        android:layout_width="190dp"
+        android:layout_height="195dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="195dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvPostName"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="20sp"
+            android:paddingTop="8sp" />
+
+        <TextView
+            android:id="@+id/tvPostLabels"
+            android:layout_width="142dp"
+            android:layout_height="88dp"
+            android:layout_marginVertical="15sp"
+            android:paddingTop="8dp" />
+
+    </LinearLayout>
+</LinearLayout>
